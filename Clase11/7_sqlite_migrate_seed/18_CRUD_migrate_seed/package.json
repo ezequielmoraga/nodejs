@@ -1,0 +1,20 @@
+{
+  "name": "crud_db_sqlite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "AppPrincipal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "sequelize db:migrate --url  sqlite://$(pwd)/dblogistica.sqlite",
+    "unmigrate": "sequelize db:migrate:undo:all --url  sqlite://$(pwd)/dblogistica.sqlite",
+    "seed": "sequelize db:seed:all --url  sqlite://$(pwd)/dblogistica.sqlite",
+    "unseed": "sequelize db:seed:undo:all --url sqlite://$(pwd)/dblogistica.sqlite"
+  },
+  "author": "saelmi",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2",
+    "sqlite3": "^5.1.7"
+  }
+}

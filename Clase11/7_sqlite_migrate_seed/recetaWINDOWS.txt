@@ -1,0 +1,8 @@
+"scripts": {
+  "migrate": "sequelize db:migrate --url sqlite://%cd%/db.sqlite"
+}
+
+    "migrate": "sequelize db:migrate --url  sqlite://%cd%/dblogistica.sqlite",
+    "unmigrate": "sequelize db:migrate:undo:all --url  sqlite://%cd%/dblogistica.sqlite",
+    "seed": "sequelize db:seed:all --url  sqlite://%cd%/dblogistica.sqlite",
+    "unseed":"sequelize db:seed:undo:all --url sqlite://%cd%/dblogistica.sqlite"

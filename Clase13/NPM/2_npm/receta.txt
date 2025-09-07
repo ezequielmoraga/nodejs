@@ -1,0 +1,11 @@
+npm init
+
+pide nombre del paquete
+version
+Es un paquete
+entre point js
+test command
+git repository: 
+keywords: 
+author: 
+license: (ISC) 

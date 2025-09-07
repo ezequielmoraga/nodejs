@@ -1,0 +1,20 @@
+
+Cross-Origin Resource Sharing
+
+Servidor configura a que otro Dominio / Puerto puede el navegador acceder a recursos para el sitio en cuestion
+
+Uso solo en debug/desarrollo
+'*' recurso accesible por cualquier dominio
+
+    res.setHeader('Access-Control-Allow-Origin', '*');
+
+Uso correcto
+    res.setHeader('Access-Control-Allow-Origin', 'https://logisticasaelmi.com.ar');
+
+
+Metodos Permitidos para esta API:
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+
+
+Encabezado permitido 'Content-Type'
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');

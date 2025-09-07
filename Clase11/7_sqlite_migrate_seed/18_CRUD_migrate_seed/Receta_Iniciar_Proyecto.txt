@@ -1,0 +1,12 @@
+Para hacer andar 18_CRUD_migrate_seed
+
+1) Abrir la carpeta con VSCode
+2) Abrir una terminal dentro de la carpeta 18_CRUD_migrate_seed
+3) Escribir en la terminal npm install
+    Este paso debe instalar las dependencias que diga el package.json
+4) Si no las puede instalar, entonces hacerlo manualmente:
+    npm install sequelize
+    npm install sequelize-cli
+    npm install sqlite3
+5) Si sigue sin funcionar la migracion y seed, instalar sequelize-cli de forma global con:
+    sudo npm install -g sequelize-cli

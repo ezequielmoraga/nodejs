@@ -1,0 +1,88 @@
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.000044001    127.0.0.1             127.0.0.1             HTTP/JSON 237    POST /api/Choferes HTTP/1.1 , JavaScript Object Notation (application/json)
+
+Frame 4: 237 bytes on wire (1896 bits), 237 bytes captured (1896 bits) on interface lo, id 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 42962, Dst Port: 3000, Seq: 1, Ack: 1, Len: 171
+Hypertext Transfer Protocol
+    POST /api/Choferes HTTP/1.1\r\n
+    Host: 127.0.0.1:3000\r\n
+    User-Agent: curl/7.81.0\r\n
+    Accept: */*\r\n
+    Content-Type: application/json\r\n
+    Content-Length: 28\r\n
+    \r\n
+    [Full request URI: http://127.0.0.1:3000/api/Choferes]
+    [HTTP request 1/1]
+    [Response in frame: 6]
+    File Data: 28 bytes
+JavaScript Object Notation: application/json
+    Object
+        Member: nombre
+            [Path with value: /nombre:John]
+            [Member with value: nombre:John]
+            String value: John
+            Key: nombre
+            [Path: /nombre]
+        Member: edad
+            [Path with value: /edad:33]
+            [Member with value: edad:33]
+            Number value: 33
+            Key: edad
+            [Path: /edad]
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 08 00 45 00   ..............E.
+0010  00 df ff c7 40 00 40 06 3c 4f 7f 00 00 01 7f 00   ....@.@.<O......
+0020  00 01 a7 d2 0b b8 66 4d 48 a7 3d 15 30 80 80 18   ......fMH.=.0...
+0030  02 00 fe d3 00 00 01 01 08 0a f2 f9 66 4a f2 f9   ............fJ..
+0040  66 4a 50 4f 53 54 20 2f 61 70 69 2f 43 68 6f 66   fJPOST /api/Chof
+0050  65 72 65 73 20 48 54 54 50 2f 31 2e 31 0d 0a 48   eres HTTP/1.1..H
+0060  6f 73 74 3a 20 31 32 37 2e 30 2e 30 2e 31 3a 33   ost: 127.0.0.1:3
+0070  30 30 30 0d 0a 55 73 65 72 2d 41 67 65 6e 74 3a   000..User-Agent:
+0080  20 63 75 72 6c 2f 37 2e 38 31 2e 30 0d 0a 41 63    curl/7.81.0..Ac
+0090  63 65 70 74 3a 20 2a 2f 2a 0d 0a 43 6f 6e 74 65   cept: */*..Conte
+00a0  6e 74 2d 54 79 70 65 3a 20 61 70 70 6c 69 63 61   nt-Type: applica
+00b0  74 69 6f 6e 2f 6a 73 6f 6e 0d 0a 43 6f 6e 74 65   tion/json..Conte
+00c0  6e 74 2d 4c 65 6e 67 74 68 3a 20 32 38 0d 0a 0d   nt-Length: 28...
+00d0  0a 7b 22 6e 6f 6d 62 72 65 22 3a 22 4a 6f 68 6e   .{"nombre":"John
+00e0  22 2c 20 22 65 64 61 64 22 3a 33 33 7d            ", "edad":33}
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.003470957    127.0.0.1             127.0.0.1             HTTP     236    HTTP/1.1 200 OK 
+
+Frame 6: 236 bytes on wire (1888 bits), 236 bytes captured (1888 bits) on interface lo, id 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 3000, Dst Port: 42962, Seq: 1, Ack: 172, Len: 170
+Hypertext Transfer Protocol
+    HTTP/1.1 200 OK\r\n
+    Date: Wed, 22 May 2024 14:55:20 GMT\r\n
+    Connection: keep-alive\r\n
+    Keep-Alive: timeout=5\r\n
+    Content-Length: 47\r\n
+    \r\n
+    [HTTP response 1/1]
+    [Time since request: 0.003426956 seconds]
+    [Request in frame: 4]
+    [Request URI: http://127.0.0.1:3000/api/Choferes]
+    File Data: 47 bytes
+    Data (47 bytes)
+        Data: 536572766572207265636962696f20736f6c696974756420504f53542070617261202f61…
+        [Length: 47]
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 08 00 45 00   ..............E.
+0010  00 de 9e fc 40 00 40 06 9d 1b 7f 00 00 01 7f 00   ....@.@.........
+0020  00 01 0b b8 a7 d2 3d 15 30 80 66 4d 49 52 80 18   ......=.0.fMIR..
+0030  02 00 fe d2 00 00 01 01 08 0a f2 f9 66 4d f2 f9   ............fM..
+0040  66 4a 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f   fJHTTP/1.1 200 O
+0050  4b 0d 0a 44 61 74 65 3a 20 57 65 64 2c 20 32 32   K..Date: Wed, 22
+0060  20 4d 61 79 20 32 30 32 34 20 31 34 3a 35 35 3a    May 2024 14:55:
+0070  32 30 20 47 4d 54 0d 0a 43 6f 6e 6e 65 63 74 69   20 GMT..Connecti
+0080  6f 6e 3a 20 6b 65 65 70 2d 61 6c 69 76 65 0d 0a   on: keep-alive..
+0090  4b 65 65 70 2d 41 6c 69 76 65 3a 20 74 69 6d 65   Keep-Alive: time
+00a0  6f 75 74 3d 35 0d 0a 43 6f 6e 74 65 6e 74 2d 4c   out=5..Content-L
+00b0  65 6e 67 74 68 3a 20 34 37 0d 0a 0d 0a 53 65 72   ength: 47....Ser
+00c0  76 65 72 20 72 65 63 69 62 69 6f 20 73 6f 6c 69   ver recibio soli
+00d0  69 74 75 64 20 50 4f 53 54 20 70 61 72 61 20 2f   itud POST para /
+00e0  61 70 69 2f 43 68 6f 66 65 72 65 73               api/Choferes

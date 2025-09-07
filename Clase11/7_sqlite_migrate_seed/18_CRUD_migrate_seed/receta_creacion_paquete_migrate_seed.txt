@@ -1,0 +1,48 @@
+npm init
+dar nombre al package ej: crud_db_sqlite
+entrypoint : js principal
+el resto todo enter hasta
+is this OK?, escribir yes, luego enter
+OBSERVAR: se crea un  archivo package.json
+npm install sequelize #(instalar sequelize para el proyecto)
+OBSERVAR: en el package.json se autoagrega dependencia sequelize
+npx sequelize init #(crea estructura de carpetas)
+
+#Existiendo un model crear archivos de migracion:
+npx sequelize migration:create --name CreateTablaUsers # 1 para cada tabla mejor
+OBSERVAR: Se crea un archivo con fecha actual y nombre CreateTablaUsers
+Completar en el archivo los metodos up y down
+up: await queryInterface.createTable( ..... mechando lo de models
+down: borrar tablas..
+
+#Existiendo un model crear archivos de seed:
+npx sequelize seed:create --name FillChoferesTable  # 1 para cada tabla mejor
+up : agregar la inicializacion bulkInsert
+down para que borre las filas
+
+
+
+
+verificar dialect sqlite en config.json de carpeta config
+
+pisar con:
+
+    "username": null,
+    "password": null,
+    "database": "main",
+    "host": "127.0.0.1",
+    "dialect": "sqlite",
+    "storage": "../db.sqlite"
+
+Revisar package.json
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "sequelize db:migrate --url  sqlite://$(pwd)/db.sqlite",
+    "unmigrate": "sequelize db:migrate:undo:all --url  sqlite://$(pwd)/db.sqlite",
+    "seed": "sequelize db:seed:all --url  sqlite://$(pwd)/db.sqlite",
+    "unseed":"sequelize db:seed:undo:all --url sqlite://$(pwd)/db.sqlite"
+  },
+
+
+

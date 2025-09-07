@@ -1,0 +1,4 @@
+npm install sequelize
+npm install sequelize-cli
+
+npx sequelize --help

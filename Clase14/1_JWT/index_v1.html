@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests Example</title>
+</head>
+<body>
+    <h1>Requests Example</h1>
+
+    <button onclick="registerUser()">Register User</button>
+    <button onclick="loginUser()">Login User</button>
+    <button onclick="getProtectedData()">Get Protected Data</button>
+
+    <script>
+        function registerUser() {
+            const userData = {
+                username: 'example_user',
+                email: 'example@example.com',
+                password: 'example_password'
+            };
+
+            fetch('http://localhost:3000/api/user/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(userData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to register user');
+                }
+                console.log('User registered successfully');
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        function loginUser() {
+            const userData = {
+                email: 'example@example.com',
+                password: 'example_password'
+            };
+
+            fetch('http://localhost:3000/api/user/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(userData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to login user');
+                }
+                console.log('User logged in successfully');
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        function getProtectedData() {
+            fetch('http://localhost:3000/api/protected')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch protected data');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Protected data:', data);
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>

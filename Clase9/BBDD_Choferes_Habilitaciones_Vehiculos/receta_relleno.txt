@@ -1,0 +1,20 @@
+INSERT INTO Choferes (id_chofer,nombre,apellido,dni,licencia,edad) VALUES (2,'John','Connor','123123','A1',16);
+INSERT INTO Choferes (id_chofer,nombre,apellido,dni,licencia,edad) VALUES (22,'Saelmi','Keduc','222222','B1',27);
+INSERT INTO Choferes (id_chofer,nombre,apellido,dni,licencia,edad) VALUES (4,'Pedro','Gonzalez','202020','C2',25);
+INSERT INTO Choferes (id_chofer,nombre,apellido,dni,licencia,edad) VALUES (5,'Maximo','Cosetti','555123','C3',40);
+INSERT INTO Choferes (id_chofer,nombre,apellido,dni,licencia,edad) VALUES (1,'Juan','Fangio','312312','C1',120);
+
+
+INSERT INTO Vehiculos (id_vehiculo,patente,carga_util,licencia_minima,en_uso) VALUES (2,'BBB222',17000,'D2',1);
+INSERT INTO Vehiculos (id_vehiculo,patente,carga_util,licencia_minima,en_uso) VALUES (3,'CCC333',17000,'D2',1);
+INSERT INTO Vehiculos (id_vehiculo,patente,carga_util,licencia_minima,en_uso) VALUES (41,'DDD444',10000,'C2',1);
+INSERT INTO Vehiculos (id_vehiculo,patente,carga_util,licencia_minima,en_uso) VALUES (12,'EEE555',5000,'B1',1);
+INSERT INTO Vehiculos (id_vehiculo,patente,carga_util,licencia_minima,en_uso) VALUES (5,'FFF666',1000,'B2',1);
+
+INSERT INTO Habilitacion (id_chofer,id_vehiculo) VALUES (1,1);
+INSERT INTO Habilitacion (id_chofer,id_vehiculo) VALUES (1,2);
+INSERT INTO Habilitacion (id_chofer,id_vehiculo) VALUES (1,3);
+INSERT INTO Habilitacion (id_chofer,id_vehiculo) VALUES (1,5);
+INSERT INTO Habilitacion (id_chofer,id_vehiculo) VALUES (1,12);
+INSERT INTO Habilitacion (id_chofer,id_vehiculo) VALUES (22,12);
+INSERT INTO Habilitacion (id_chofer,id_vehiculo) VALUES (4,1);

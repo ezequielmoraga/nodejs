@@ -1,0 +1,24 @@
+//Codigo no funcional
+
+someAsyncFunction((error, value) => {
+  if (error) handleError(error);
+  else processValue(value);
+});
+
+//Para manjear fallos se le pasa error, valor
+//Si se pasa error es que fallo
+//Si se pasa validator, es el resultado de la ejecucion
+
+//Opcion con .then()
+
+.then(acceptHandler, rejectHandler)
+
+//Opcion con constructor Promise
+function textFile(filename) {
+    return new Promise((resolve, reject) => {
+      readTextFile(filename, (text, error) => {
+        if (error) reject(error);
+        else resolve(text);
+      });
+    });
+  }

@@ -1,0 +1,29 @@
+Se levante un server estatico usando serve (paquete de npm)
+
+O con Netcat
+
+http://sarasa.org.ar/carpeta/pagina1.html
+
+/////////////////////////////////////////////
+GET /carpeta/pagina1.html HTTP/1.1
+Host: 127.0.0.1:5555
+Connection: keep-alive
+sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-ES,es;q=0.9
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+http://sarasa.org.ar/app1/user?name=Carlitos&surname=Sanchez
+http://sarasa.org.ar/carpeta/pagina1.html#p2
+http://sarasa.org.ar:8080/carpeta/pagina1.html
+http://salemi@sarasa.org.ar/app2/showinfo   accede a recurso para un usuario(con password)

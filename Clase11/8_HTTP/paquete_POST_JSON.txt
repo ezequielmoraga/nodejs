@@ -1,0 +1,42 @@
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.000044963    127.0.0.1             127.0.0.1             HTTP/JSON 214    POST / HTTP/1.1 , JavaScript Object Notation (application/json)
+
+Frame 4: 214 bytes on wire (1712 bits), 214 bytes captured (1712 bits) on interface lo, id 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 40552, Dst Port: 8000, Seq: 1, Ack: 1, Len: 148
+Hypertext Transfer Protocol
+    POST / HTTP/1.1\r\n
+    Host: 127.0.0.1:8000\r\n
+    User-Agent: curl/7.81.0\r\n
+    Accept: */*\r\n
+    Content-Type: application/json\r\n
+    Content-Length: 17\r\n
+    \r\n
+    [Full request URI: http://127.0.0.1:8000/]
+    [HTTP request 1/1]
+    [Response in frame: 6]
+    File Data: 17 bytes
+JavaScript Object Notation: application/json
+    Object
+        Member: nombre
+            [Path with value: /nombre:John]
+            [Member with value: nombre:John]
+            String value: John
+            Key: nombre
+            [Path: /nombre]
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 08 00 45 00   ..............E.
+0010  00 c8 cb 86 40 00 40 06 70 a7 7f 00 00 01 7f 00   ....@.@.p.......
+0020  00 01 9e 68 1f 40 bb 53 4c 34 70 96 d1 d5 80 18   ...h.@.SL4p.....
+0030  02 00 fe bc 00 00 01 01 08 0a f2 87 24 44 f2 87   ............$D..
+0040  24 44 50 4f 53 54 20 2f 20 48 54 54 50 2f 31 2e   $DPOST / HTTP/1.
+0050  31 0d 0a 48 6f 73 74 3a 20 31 32 37 2e 30 2e 30   1..Host: 127.0.0
+0060  2e 31 3a 38 30 30 30 0d 0a 55 73 65 72 2d 41 67   .1:8000..User-Ag
+0070  65 6e 74 3a 20 63 75 72 6c 2f 37 2e 38 31 2e 30   ent: curl/7.81.0
+0080  0d 0a 41 63 63 65 70 74 3a 20 2a 2f 2a 0d 0a 43   ..Accept: */*..C
+0090  6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 70   ontent-Type: app
+00a0  6c 69 63 61 74 69 6f 6e 2f 6a 73 6f 6e 0d 0a 43   lication/json..C
+00b0  6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 31   ontent-Length: 1
+00c0  37 0d 0a 0d 0a 7b 22 6e 6f 6d 62 72 65 22 3a 22   7....{"nombre":"
+00d0  4a 6f 68 6e 22 7d                                 John"}

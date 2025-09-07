@@ -1,0 +1,6 @@
+1 console log
+2 console log
+Hola hola
+Chau Chau
+Soy una archivo de una sola linea
+

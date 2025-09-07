@@ -1,0 +1,39 @@
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.000043295    127.0.0.1             127.0.0.1             HTTP     225    POST / HTTP/1.1  (application/x-www-form-urlencoded)
+
+Frame 4: 225 bytes on wire (1800 bits), 225 bytes captured (1800 bits) on interface lo, id 0
+Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
+Internet Protocol Version 4, Src: 127.0.0.1, Dst: 127.0.0.1
+Transmission Control Protocol, Src Port: 50444, Dst Port: 8000, Seq: 1, Ack: 1, Len: 159
+Hypertext Transfer Protocol
+    POST / HTTP/1.1\r\n
+    Host: 127.0.0.1:8000\r\n
+    User-Agent: curl/7.81.0\r\n
+    Accept: */*\r\n
+    Content-Length: 11\r\n
+    Content-Type: application/x-www-form-urlencoded\r\n
+    \r\n
+    [Full request URI: http://127.0.0.1:8000/]
+    [HTTP request 1/1]
+    [Response in frame: 6]
+    File Data: 11 bytes
+HTML Form URL Encoded: application/x-www-form-urlencoded
+    Form item: "bla bla bla" = ""
+        Key: bla bla bla
+        Value: 
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 08 00 45 00   ..............E.
+0010  00 d3 33 5a 40 00 40 06 08 c9 7f 00 00 01 7f 00   ..3Z@.@.........
+0020  00 01 c5 0c 1f 40 b5 80 e4 e2 6d d7 cc c0 80 18   .....@....m.....
+0030  02 00 fe c7 00 00 01 01 08 0a f2 7f 33 84 f2 7f   ............3...
+0040  33 84 50 4f 53 54 20 2f 20 48 54 54 50 2f 31 2e   3.POST / HTTP/1.
+0050  31 0d 0a 48 6f 73 74 3a 20 31 32 37 2e 30 2e 30   1..Host: 127.0.0
+0060  2e 31 3a 38 30 30 30 0d 0a 55 73 65 72 2d 41 67   .1:8000..User-Ag
+0070  65 6e 74 3a 20 63 75 72 6c 2f 37 2e 38 31 2e 30   ent: curl/7.81.0
+0080  0d 0a 41 63 63 65 70 74 3a 20 2a 2f 2a 0d 0a 43   ..Accept: */*..C
+0090  6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 31   ontent-Length: 1
+00a0  31 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a   1..Content-Type:
+00b0  20 61 70 70 6c 69 63 61 74 69 6f 6e 2f 78 2d 77    application/x-w
+00c0  77 77 2d 66 6f 72 6d 2d 75 72 6c 65 6e 63 6f 64   ww-form-urlencod
+00d0  65 64 0d 0a 0d 0a 62 6c 61 20 62 6c 61 20 62 6c   ed....bla bla bl
+00e0  61                                                a

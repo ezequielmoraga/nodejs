@@ -1,0 +1,42 @@
+[
+    {
+        "apellido": "Fangio",
+        "createdAt": "2024-05-03 02:54:09.288 +00:00",
+        "dni": "111111",
+        "edad": 120,
+        "id_chofer": 1,
+        "licencia": "D4",
+        "nombre": "Juan",
+        "updatedAt": "2024-05-03 02:54:09.288 +00:00"
+    },
+    {
+        "apellido": "DaSilva",
+        "createdAt": "2024-05-03 02:54:09.288 +00:00",
+        "dni": "222222",
+        "edad": 70,
+        "id_chofer": 3,
+        "licencia": "C2",
+        "nombre": "ArtonSena",
+        "updatedAt": "2024-05-17 18:29:07.770 +00:00"
+    },
+    {
+        "apellido": "Galvez",
+        "createdAt": "2024-05-03 02:54:09.288 +00:00",
+        "dni": "333333",
+        "edad": 150,
+        "id_chofer": 5,
+        "licencia": "B2",
+        "nombre": "Juan",
+        "updatedAt": "2024-05-03 02:54:09.288 +00:00"
+    },
+    {
+        "apellido": "Hakinnen",
+        "createdAt": "2024-05-03 02:54:09.288 +00:00",
+        "dni": "444444",
+        "edad": 40,
+        "id_chofer": 9,
+        "licencia": "C3",
+        "nombre": "Mikka",
+        "updatedAt": "2024-05-03 02:54:09.288 +00:00"
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "carga_util": 10000.0,
+        "createdAt": "2024-05-03 02:54:09.294 +00:00",
+        "en_uso": 1,
+        "id_vehiculo": 2,
+        "licencia_minima": "C3",
+        "patente": "AAA111",
+        "updatedAt": "2024-05-03 02:54:09.294 +00:00"
+    },
+    {
+        "carga_util": 1000.0,
+        "createdAt": "2024-05-03 02:54:09.294 +00:00",
+        "en_uso": 0,
+        "id_vehiculo": 4,
+        "licencia_minima": "B2",
+        "patente": "BBB111",
+        "updatedAt": "2024-05-03 02:54:09.294 +00:00"
+    },
+    {
+        "carga_util": 5000.0,
+        "createdAt": "2024-05-03 02:54:09.294 +00:00",
+        "en_uso": 0,
+        "id_vehiculo": 6,
+        "licencia_minima": "A1",
+        "patente": "EEE444",
+        "updatedAt": "2024-05-03 02:54:09.294 +00:00"
+    },
+    {
+        "carga_util": 40000.0,
+        "createdAt": "2024-05-03 02:54:09.294 +00:00",
+        "en_uso": 0,
+        "id_vehiculo": 12,
+        "licencia_minima": "B1",
+        "patente": "DDD333",
+        "updatedAt": "2024-05-03 02:54:09.294 +00:00"
+    },
+    {
+        "carga_util": 11000.0,
+        "createdAt": "2024-05-03 02:54:09.294 +00:00",
+        "en_uso": 1,
+        "id_vehiculo": 44,
+        "licencia_minima": "C1",
+        "patente": "CCC222",
+        "updatedAt": "2024-05-03 02:54:09.294 +00:00"
+    }
+]

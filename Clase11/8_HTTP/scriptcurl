@@ -1,0 +1,12 @@
+#!/bin/bash
+curl -X GET  127.0.0.1:3000
+curl -X POST  127.0.0.1:3000
+curl -X PUT  127.0.0.1:3000
+curl -X DELETE  127.0.0.1:3000
+
+
+curl -X GET  127.0.0.1:3000/sarasa
+curl -X POST  127.0.0.1:3000/sarasa
+curl -X PUT  127.0.0.1:3000/sarasa
+curl -X DELETE  127.0.0.1:3000/sarasa
+

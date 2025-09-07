@@ -1,0 +1,2 @@
+npm install sequelize
+npm ls te dice los instalados

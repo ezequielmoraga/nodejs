@@ -1,0 +1,22 @@
+Migrar
+migrate up
+Crea tablas vacias
+npx sequelize-cli db:migrate --url sqlite://$(pwd)/db.sqlite
+npm run migrate
+“Desmigrar”
+migrate down
+Vuelve a migración anterior // Borra tabla
+npx sequelize-cli db:migrate:undo:all --url sqlite://$(pwd)/db.sqlite
+npm run unmigrate
+
+“Seed”
+seed up
+llena los valores de tablas realizando el seed up
+npx sequelize-cli db:seed:all --url sqlite://$(pwd)/db.sqlite
+npm run seed
+
+“Unseed”
+seed down
+vacia los valores de tablas o vuelve a estado anterior
+npx sequelize-cli db:seed:undo:all --url sqlite://$(pwd)/db.sqlite
+npm run unseed

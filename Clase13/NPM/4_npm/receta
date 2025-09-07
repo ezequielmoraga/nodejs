@@ -1,0 +1,13 @@
+
+Instala version especifica de paquete
+npm install sequelize@6.37.2
+
+Instala el paquete pero solo en las dependencias de desarrollo //mostrar package.json
+ npm install sequelize-cli --save-dev
+
+
+ npm list 
+ me muestra las dependencias
+
+ SI borro node_modules no estan las dependencias npm list
+ reinistalo con npm install

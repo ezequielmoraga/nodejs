@@ -1,0 +1,10 @@
+Esat version permite acceder a una ruta de forma verificada JWT
+El modelo de usuarios esa en models.js
+Estan los modelos de CHoferes, usuarios y habilitaciones
+Verion 9 funciona 
+GET_ALL_CHOFERES login
+GET_ALL_VEHICULOS login
+GET_ALL_Habilitaciones login
+CREATE CHOFER
+DELETE CHOFER x nombre
+
