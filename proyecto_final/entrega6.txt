@@ -1,0 +1,35 @@
+Requisitos:
+
+Usar un archivo externo (por ejemplo BBDD.data) para almacenar la información de los empleados.
+
+Al iniciar el programa:
+
+Si el archivo existe, debe leerlo y cargar sus datos en el array empleados.
+
+Si no existe, se debe crear uno vacío.
+
+Cada vez que se ejecute una operación (CREATE, UPDATE, DELETE), los cambios deben guardarse en el archivo.
+
+El programa debe mantener las mismas opciones de la versión anterior
+
+CREATE nombre apellido edad : agregar empleado si no existe.
+
+READ ALL : mostrar todos los empleados.
+
+READ nombre <nombre> : mostrar solo el empleado que coincida.
+
+UPDATE nombre <viejo> <nuevo_nombre> <nuevo_apellido> <nueva_edad> : modificar datos.
+
+DELETE ALL : eliminar todos los empleados.
+
+DELETE nya <nombre> <apellido> : eliminar un empleado específico.
+
+LISTA : mostrar listado completo.
+
+Entregable:
+
+Un archivo de código con tu nombre y apellido, por ejemplo ezequiel_moraga.js
+
+El archivo de base de datos BBDD.data
+
+Capturas de pantalla mostrando el funcionamiento correcto de cada opción
