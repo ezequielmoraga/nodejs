@@ -1,7 +1,34 @@
-// CRUD con persistencia en archivo (Semana 6)
 
+///entrega 7
+let net = require("net");
 const fs = require("fs");
 
+//funciones
+
+
+
+function DDBB_json_al_array(archivo) {
+    let datos = fs.readFileSync(archivo, 'utf-8'); 
+    return JSON.parse(datos); //texto json en array
+}
+function array_al_jsonDDBB(archivo, data_en_json) {
+    fs.writeFileSync(archivo, data_en_json, 'utf-8'); // guarda los cambios
+}
+
+
+// Leer archivo si existe, sino empezar vacío
+let empleados = [];
+if (fs.existsSync("BBDD.data")) {
+    empleados = DDBB_json_al_array("BBDD.data");
+}
+
+// Guardar cambios
+function guardar() {
+    array_al_jsonDDBB("BBDD.data", JSON.stringify(empleados, null, 2));
+}
+
+
+//clase para crear objetos
 class Persona {
     constructor(nombre, apellido, edad) {
         this.nombre = nombre;
@@ -10,16 +37,10 @@ class Persona {
     }
 }
 
-// Leer archivo si existe, sino empezar vacío
-let empleados = [];
-if (fs.existsSync("BBDD.data")) {
-    empleados = JSON.parse(fs.readFileSync("BBDD.data", "utf-8"));
-}
 
-// Guardar cambios
-function guardar() {
-    fs.writeFileSync("BBDD.data", JSON.stringify(empleados, null, 2));
-}
+
+
+
 
 // CREATE
 if (process.argv[2] === "CREATE") {
