@@ -18,5 +18,15 @@
     "nombre": "Kyle",
     "apellido": "Reese",
     "edad": 25
+  },
+  {
+    "nombre": "juan",
+    "apellido": "perez",
+    "edad": "33"
+  },
+  {
+    "nombre": "ezequiel",
+    "apellido": "moraga",
+    "edad": "22"
   }
 ]
