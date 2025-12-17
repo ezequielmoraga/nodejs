@@ -1,0 +1,3 @@
+npm init –yes #Modo automatico
+
+- - yes lo crea en modo automatico sin preguntar nada

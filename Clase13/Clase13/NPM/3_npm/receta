@@ -1,0 +1,6 @@
+npm install sequelize
+crea node_modules
+package.json
+
+npx sequelize init
+crea config migrations models seeders
